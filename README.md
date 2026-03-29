@@ -56,7 +56,7 @@ Browser → Node.js app → MongoDB
 ├── .gitignore
 ├── Makefile
 ├── README.md
-└── docker-compose.yml
+└── docker-compose.yml ```
 
 
 
