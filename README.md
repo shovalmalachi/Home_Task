@@ -4,17 +4,19 @@ A simple containerized web application built with **Node.js** and **MongoDB**.
 
 The application:
 - serves a simple HTML page
-- returns the number of apples stored in the database
+- displays the number of apples in the database
 - exposes a health endpoint
 - runs fully with Docker Compose
-- includes automated seeding, test automation, and CI validation
+- includes automated seeding, testing, and CI validation
+
+---
 
 ## Architecture
 
 The project contains two main services:
 
-- **app** – Node.js + Express web application
-- **mongo** – MongoDB database
+- **app** – Node.js + Express web application  
+- **mongo** – MongoDB database  
 
 Each component runs in its own container.
 
@@ -22,14 +24,18 @@ Each component runs in its own container.
 
 Browser → Node.js app → MongoDB
 
+---
+
 ## Tech Stack
 
-- Node.js
-- Express
-- MongoDB
-- Docker
-- Docker Compose
-- GitHub Actions
+- Node.js  
+- Express  
+- MongoDB  
+- Docker  
+- Docker Compose  
+- GitHub Actions  
+
+---
 
 ## Project Structure
 
@@ -56,49 +62,40 @@ Browser → Node.js app → MongoDB
 ├── .gitignore
 ├── Makefile
 ├── README.md
-└── docker-compose.yml ```
+└── docker-compose.yml```
 
 
 
 
+## Quick Start
 
-In order to run it all from scratch, use: 
+Run everything from scratch with a single command:
+
 make run
 
 This command:
-
-builds and starts the containers
-waits for the application to become ready
-seeds the database
-runs the validation tests
-
-What the HTML Page Shows
+    1. builds and starts the containers
+    2. waits for the application to be ready
+    3. seeds the database
+    4. runs validation tests
 
 The HTML page:
+- displays a simple Hello World page
+- shows the number of apples in the database
+- lists fruit data retrieved from MongoDB
 
-displays a simple Hello World page
-shows the number of apples in the database
-lists the fruit data returned from MongoDB
-Automation
-
+## Automation
 The project is fully automated using:
+- Docker Compose for provisioning the architecture
+- Makefile for one-command execution and operational shortcuts
+- seed script for deterministic database initialization
+- test script for validation
+- GitHub Actions CI for automated checks on push and pull       requests
 
-Docker Compose for provisioning the architecture
-Makefile for one-command execution and operational shortcuts
-seed script for deterministic database initialization
-test script for validation
-GitHub Actions CI for automated checks on push and pull request
-CI
-
-A GitHub Actions workflow is included to:
-
-build the containers
-start the services
-wait for readiness
-seed the database
-run the tests
-Design Notes
-The architecture was intentionally kept simple and clear.
-Each major component runs in its own container.
-The application includes retry logic for MongoDB connectivity during startup.
-The Makefile was added to simplify the user experience and allow both one-command execution and step-by-step contro
+## CI
+The GitHub Actions workflow:
+- builds the containers
+- start the services
+- waits for readiness
+- seeds the database
+- runs tests
