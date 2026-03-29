@@ -1,0 +1,14 @@
+{
+  "name": "home-task-app",
+  "version": "1.0.0",
+  "description": "Node.js + MongoDB home task",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "seed": "node scripts/seed.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongodb": "^6.15.0"
+  }
+}
