@@ -99,3 +99,9 @@ The GitHub Actions workflow:
 - waits for readiness
 - seeds the database
 - runs tests
+
+## Bonus
+- Makefile one-command flow
+- README
+- CI
+- Architecture explanation
