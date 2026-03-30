@@ -72,7 +72,7 @@ Browser → Node.js app → MongoDB
 Run everything from scratch with a single command:
 
 make run
-
+http://localhost:3000
 
 This command:
 -  builds and starts the containers
