@@ -105,3 +105,4 @@ The GitHub Actions workflow:
 - README
 - CI
 - Architecture explanation
+- A MongoDB health check in "docker compose.yml" using     'mongosh' ping - ensures proper startup ordering and help detect service readiness issues.
