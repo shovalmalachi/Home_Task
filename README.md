@@ -68,9 +68,11 @@ Browser → Node.js app → MongoDB
 
 
 ## Quick Start
+first, clone the repo:
+- git clone https://github.com/shovalmalachi/Home_Task
+- cd Home_Task
 
 Run everything from scratch with a single command:
-
 - make run
 - http://localhost:3000
 
