@@ -73,11 +73,12 @@ Run everything from scratch with a single command:
 
 make run
 
+
 This command:
-    1. builds and starts the containers
-    2. waits for the application to be ready
-    3. seeds the database
-    4. runs validation tests
+-  builds and starts the containers
+-  waits for the application to be ready
+-  seeds the database
+-  runs validation tests
 
 The HTML page:
 - displays a simple Hello World page
